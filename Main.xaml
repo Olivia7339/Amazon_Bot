@@ -1,0 +1,533 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1095,813" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="696,748" sap2010:WorkflowViewState.IdRef="Sequence_6">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Flowchart DisplayName="AmazonBot_Flowchart" sap:VirtualizedContainerService.HintSize="634,637" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+      <Flowchart.Variables>
+        <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+        <Variable x:TypeArguments="x:String" Name="ExcelFilePath">
+          <Variable.Default>
+            <Literal x:TypeArguments="x:String">C:\Users\marti\OneDrive\Documents\UiPath Criteria\Ama.xlsx</Literal>
+          </Variable.Default>
+        </Variable>
+        <Variable x:TypeArguments="sd:DataTable" Name="AmazonBot_DT" />
+      </Flowchart.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
+          <av:Size x:Key="ShapeSize">60,75</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">300,77.5 300,107.5 290,107.5 290,149.5</av:PointCollection>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Flowchart.StartNode>
+        <x:Reference>__ReferenceID1</x:Reference>
+      </Flowchart.StartNode>
+      <FlowStep x:Name="__ReferenceID1">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <av:Point x:Key="ShapeLocation">190,149.5</av:Point>
+            <av:Size x:Key="ShapeSize">200,81</av:Size>
+            <av:PointCollection x:Key="ConnectorLocation">290,230.5 280,230.5 280,258.5</av:PointCollection>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <Sequence DisplayName="Retrieving Datatable" sap:VirtualizedContainerService.HintSize="200,81" sap2010:WorkflowViewState.IdRef="Sequence_1">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:BuildDataTable DataTable="[AmazonBot_DT]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="626,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Product_x0020_Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Kindle_x0020_Price&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Paperback_x0020_Price&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Description&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Bot_x0020_Results&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;Product_x0020_Name&gt;text&lt;/Product_x0020_Name&gt;&#xA;  &lt;/TableName&gt;&#xA;&lt;/NewDataSet&gt;" />
+          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: Amazon.com. Spend less. Smile more." sap:VirtualizedContainerService.HintSize="626,550" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="49e14ee0-c6ee-4fe1-a639-1ce36dd328c1" Version="V2" WindowResize="Maximize">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,333" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:String" Name="User_Input" />
+                    <Variable x:TypeArguments="x:String" Name="ProductName" />
+                    <Variable x:TypeArguments="x:String" Name="KindlePrice" />
+                    <Variable x:TypeArguments="x:String" Name="PaperbackPrice" />
+                    <Variable x:TypeArguments="x:String" Name="Description" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'All'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="49e14ee0-c6ee-4fe1-a639-1ce36dd328c1" Text="[&quot;Java Books&quot; + &quot;[k(Enter)]&quot;]" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.amazon.com/?tag=hymsabk-20&amp;ref=pd_sl_7j18redljw_e&amp;adgrpid=1338106215055591&amp;hvadid=83631709434483&amp;hvnetw=o&amp;hvqmt=e&amp;hvbmt=be&amp;hvdev=c&amp;hvlocint=&amp;hvlocphy=79893&amp;hvtargid=kwd-83631981824880:loc-190&amp;hydadcr=28883_11845453" CvTextArgument="Search Amazon" CvType="Text" DesignTimeRectangle="454, 165, 900, 48" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT twotabsearchtextb…'" FullSelectorArgument="&lt;webctrl id='twotabsearchtextbox' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='twotabsearchtextbox' tag='INPUT' type='text' class='nav-input nav-progressive-attribute' aaname='Search Amazon' /&gt;" Guid="0434083a-1cc0-451c-8371-9484825ce562" ImageBase64="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" InformativeScreenshot="c8e9e4eb98a213a4aca36152362aa943.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Amazon.com. Spend less. Smile more.' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CvTextArgument="All" CvType="Text" DesignTimeRectangle="403, 168, 24, 41" ElementType="Text" FriendlyName="'All'" FullSelectorArgument="&lt;webctrl id='nav-search-label-id' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='nav-search-label-id' tag='SPAN' type='' class='nav-search-label nav-progressive-content' aaname='All' check:innerText='All' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAAtCAYAAAC9KwucAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFLSURBVFhH7ZO/a4NQEMf7Tx6EkFHo5hKhLpVAhoaCazYhThac7GCHLGbNFIuBLuWl4PK2gH/At4fGRG26Xbr0DZ/h3t27z/t5V1UV/hIjFMcIxTFCcYxQHCMU5x8LdZ4hfctQ6GGuQGgT6Gl9HitWNogWWPfqrvOLcIfgnpsSwXlRg9wthHkAi1wsni2QHaLo5W8g3C5Z9BCjrMUWgryblxYeM/gTghuXHDfNreW2UyMt3PgY83HGX01cN5v4yI5tjahQI51xs8cEuh3bh7BpDH/T1kgKdQpvxM34df5glp4WISgsY5cnuog+FNThwm7lgEYe0vpPigkVoik36h5ny2cEh3fZfUg0T6BKXecb4RzJoYQ+3/V1LsL6rgjea9Okz2kx0wiK40bAcftH33lufRU2wv1wbp/Bo7k9RiiOEYpjhOIYoThGKEyFb9msa0P/WEVUAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="-1929, -9, 1938, 1098" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF5SURBVDhPlVM9S8NQFBW0+QOO2h+gU9vdSbuLNP0HprtDfoBIhYKgWFyFLLpUC10EjbvawcFC4qJDm4CDllQdHHq9JzdfbYLUA4e8d98959738t4cESnMA2afOSuQC40Cg31EkrBtm3Rdp4qqklqtkmEYwUoKDRi4MhZ0u12az+VoYYowzIALg6GMBVqt5gs2ymWyLCuaL+fzQcYEhikDx3H8LkzTpMt2299C2EUG0gbYf6FUikRJZiBtEFaECbo5bjb/ZxAm79Xr/nxb06KY53l+LIG0QaFYjAQ4yOQfQTdTCAy+HJkycIBLfOIQ4AtRhbe1zmajd5fGFt+J+x1hZNBZJfqwEPgbt1sifNwlOoM0NBjcEJ3z8I4XR3E3KXwOiF5aUqy1iEjiDF4vxAS8WpMqvUOiJ2bviKtvSlXkoSDWA4P4Kr89SCJMkMwcB1/qrPATupa8H/4bYHCVGxhNAC0+n8Yd9LliNvzHhOd8wvxGZEYglzWk/AJk0E1AkKBI3AAAAABJRU5ErkJggg==" InformativeScreenshot="f1671db4bce42b6ece26e36c3b30ddf1.jpg" Selector="&lt;html app='msedge.exe' title='Amazon.com. Spend less. Smile more.' /&gt;" Title="Amazon.com. Spend less. Smile more." Url="https://www.amazon.com/?tag=hymsabk-20&amp;ref=pd_sl_7j18redljw_e&amp;adgrpid=1338106215055591&amp;hvadid=83631709434483&amp;hvnetw=o&amp;hvqmt=e&amp;hvbmt=be&amp;hvdev=c&amp;hvlocint=&amp;hvlocphy=79893&amp;hvtargid=kwd-83631981824880:loc-190&amp;hydadcr=28883_11845453" />
+            </uix:NApplicationCard.TargetApp>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </uix:NApplicationCard>
+          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="626,489" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="cc669a19-fe03-46e5-9b66-23ac2b0b8ed1" Version="V2">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,272" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[AmazonBot_DT]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Product Name' ReferenceName='Column0'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Product URL ' ReferenceName='Column1'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext' name2='Column1' attr2='href'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='h2' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="Rows" MaximumResults="6" Version="V3">
+                    <uix:NExtractData.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.amazon.com/s?k=Java+Books&amp;crid=30R6D0W2EU50C&amp;sprefix=java+books%2Caps%2C127&amp;ref=nb_sb_noss_1" DesignTimeRectangle="364, 240, 1497, 9144" DesignTimeScaleFactor="1" FriendlyName="'if(window.mix_csa){wind…'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;div' parentid='search' tag='DIV' /&gt;" Guid="ed8e53c5-5415-4d92-8d33-5c73b5aa3f34" InformativeScreenshot="2a02afeb441cb697c43af89dd0ea37c0.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Amazon.com : Java Books' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                    </uix:NExtractData.Target>
+                  </uix:NExtractData>
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF5SURBVDhPlVM9S8NQFBW0+QOO2h+gU9vdSbuLNP0HprtDfoBIhYKgWFyFLLpUC10EjbvawcFC4qJDm4CDllQdHHq9JzdfbYLUA4e8d98959738t4cESnMA2afOSuQC40Cg31EkrBtm3Rdp4qqklqtkmEYwUoKDRi4MhZ0u12az+VoYYowzIALg6GMBVqt5gs2ymWyLCuaL+fzQcYEhikDx3H8LkzTpMt2299C2EUG0gbYf6FUikRJZiBtEFaECbo5bjb/ZxAm79Xr/nxb06KY53l+LIG0QaFYjAQ4yOQfQTdTCAy+HJkycIBLfOIQ4AtRhbe1zmajd5fGFt+J+x1hZNBZJfqwEPgbt1sifNwlOoM0NBjcEJ3z8I4XR3E3KXwOiF5aUqy1iEjiDF4vxAS8WpMqvUOiJ2bviKtvSlXkoSDWA4P4Kr89SCJMkMwcB1/qrPATupa8H/4bYHCVGxhNAC0+n8Yd9LliNvzHhOd8wvxGZEYglzWk/AJk0E1AkKBI3AAAAABJRU5ErkJggg==" InformativeScreenshot="62aa607fe2de6930e3884729979a90d2.jpg" Selector="&lt;html app='msedge.exe' htmlwindowname='https://m.media-amazon.com/images/I/11EIQ5IGqaL._RC%7C01ZTHTZObnL.css,410yLeQZHKL.css,31OSFXVtM5L.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11fJbvhE5HL.css,01Dm5eKVxwL.css,01IdKcBuAdL.css,01y-XAlI+2*' title='Amazon.com : Java Books' /&gt;" Title="Amazon.com : Java Books" Url="https://www.amazon.com/s?k=Java+Books&amp;ref=nb_sb_noss" />
+            </uix:NApplicationCard.TargetApp>
+          </uix:NApplicationCard>
+          <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="626,737" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+            <ueab:ExcelProcessScopeX.Body>
+              <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,650" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="530,539" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" KeepExcelFileOpen="True" ResizeWindow="None" WorkbookPath="[ExcelFilePath]">
+                    <ueab:ExcelApplicationCard.Body>
+                      <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,270" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;Sheet1&quot;)]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteRangeX_1" IgnoreEmptySource="False" Source="[AmazonBot_DT]" />
+                        </Sequence>
+                      </ActivityAction>
+                    </ueab:ExcelApplicationCard.Body>
+                  </ueab:ExcelApplicationCard>
+                </Sequence>
+              </ActivityAction>
+            </ueab:ExcelProcessScopeX.Body>
+          </ueab:ExcelProcessScopeX>
+        </Sequence>
+        <FlowStep.Next>
+          <FlowStep x:Name="__ReferenceID0">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <av:Point x:Key="ShapeLocation">180,258.5</av:Point>
+                <av:Size x:Key="ShapeSize">200,81</av:Size>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="Web Scrapping and input in Datatable" sap:VirtualizedContainerService.HintSize="860,3884" sap2010:WorkflowViewState.IdRef="Sequence_7">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="KindlePrice" />
+                <Variable x:TypeArguments="x:String" Name="Description" />
+                <Variable x:TypeArguments="x:String" Name="ProductName" />
+                <Variable x:TypeArguments="x:String" Name="PaperbackPrice" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: Amazon.com. Spend less. Smile more." sap:VirtualizedContainerService.HintSize="798,3773" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="5bee7fb1-82fe-4136-83cc-6f0f6dd1e7e3" Version="V2" WindowResize="Maximize">
+                <uix:NApplicationCard.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="764,3556" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[AmazonBot_DT]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="702,3441" sap2010:WorkflowViewState.IdRef="ForEachRow_1" MaxIterations="5">
+                        <ui:ForEachRow.Body>
+                          <ActivityAction x:TypeArguments="sd:DataRow">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="668,3255" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="5" DisplayName="Type Into 'INPUT twotabsearchtextb…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="626,218" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="5bee7fb1-82fe-4136-83cc-6f0f6dd1e7e3" Text="[CurrentRow(0).ToString + &quot;[k(Enter)]&quot;]" Version="V3">
+                                <uix:NTypeInto.Target>
+                                  <uix:TargetAnchorable BrowserURL="https://www.amazon.com/ref=nav_logo" CvTextArgument="Search Amazon" CvType="Text" DesignTimeRectangle="381, 133, 1065, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT twotabsearchtextb…'" FullSelectorArgument="&lt;webctrl id='twotabsearchtextbox' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='twotabsearchtextbox' tag='INPUT' type='text' class='nav-input nav-progressive-attribute' aaname='Search Amazon' /&gt;" Guid="f9e18e8a-1dba-452c-97a3-b6983ee1f6ab" ImageBase64="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" InformativeScreenshot="657ffe7b4c1f9caeec30ba9f8410531d.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='https://m.media-amazon.com/images/I/11EIQ5IGqaL._RC%7C01ZTHTZObnL.css,410yLeQZHKL.css,31OSFXVtM5L.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11fJbvhE5HL.css,01Dm5eKVxwL.css,01IdKcBuAdL.css,01y-XAlI+2*' title='Amazon.com. Spend less. Smile more.' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                                </uix:NTypeInto.Target>
+                              </uix:NTypeInto>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Java: The'" sap:VirtualizedContainerService.HintSize="626,157" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5bee7fb1-82fe-4136-83cc-6f0f6dd1e7e3" Version="V3">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable BrowserURL="https://www.amazon.com/s?k=Java%3A+The+Comprehensive+Guide+to+Java+Programming+for+Professionals+%28Rheinwerk+Computing%29&amp;crid=2TH5COP9Q9UBY&amp;sprefix=java+the+comprehensive+guide+to+java+programming+for+professionals+r%2Caps%2C438&amp;ref=nb_sb_noss" CvElementArea="641, 625, 1216, 345" CvTextArea="715, 639, 733, 21" CvTextArgument="The Comprehensive Guide to Java Programming for Professionals (Rheinwerk Computing)" CvType="InputBox" DesignTimeRectangle="672, 638, 775, 22" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Java: The'" FullSelectorArgument="&lt;webctrl aaname='Java: The Comprehensive Guide to Java Programming for Profession*' parentid='search' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Java: The Comprehensive Guide to Java Programming for Profession*' parentid='search' tag='SPAN' type='' class='a-size-medium a-color-base a-text-normal' /&gt;" Guid="f70f6c2d-9282-4ea2-8085-1d4443f9976e" ImageBase64="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" InformativeScreenshot="a198549a0904ea3cdb1ef97362df1eb1.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Amazon.com : Java: The Comprehensive Guide to Java Programming for Professionals (Rheinwerk Computing)' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                        <uix:Target CvTextArgument="Results" CvType="Text" DesignTimeRectangle="368, 596, 1489, 28" FriendlyName="'Results'" FullSelectorArgument="&lt;webctrl class='s-no-outline' parentid='search' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='s-no-outline' parentid='search' tag='DIV' type='' aaname='                      ' check:innerText='Results' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image, CV" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NClick.Target>
+                              </uix:NClick>
+                              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="626,890" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <TryCatch.Try>
+                                  <Sequence sap:VirtualizedContainerService.HintSize="450,662" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <uix:NGetText DisplayName="Get Text 'Paperback'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="5bee7fb1-82fe-4136-83cc-6f0f6dd1e7e3" TextString="[PaperbackPrice]" Version="V3">
+                                      <uix:NGetText.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://www.amazon.com/Testing-Java-Microservices-Arquillian-Hoverfly/dp/1617292893/ref=sr_1_1?crid=2XF1KBVDME74W&amp;keywords=Testing+Java+Microservices%3A+Using+Arquillian%2C+Hoverfly%2C+AssertJ%2C+JUnit%2C+Selenium%2C+and+Mockito&amp;qid=1689730483&amp;sprefix=testing+java+microservices+using+arquillian%2C+hoverfly%2C+assertj%2C+junit%2C+selenium%2C+a%2Caps%2C246&amp;sr=8-1" CvElementArea="734, 479, 137, 53" CvTextArea="745, 506, 106, 17" CvTextArgument="$19.85 - $44.99" CvType="Button" DesignTimeRectangle="747, 506, 107, 18" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'$19.85 - $44.99'" FullSelectorArgument="&lt;webctrl aaname=' $19.85 - $44.99 ' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' class='a-size-base a-color-price a-color-price' /&gt;" Guid="f41c6e52-4927-4f54-90a2-1a53fe64b1e2" ImageBase64="" InformativeScreenshot="7f97849803ab1b8f4f4ff1d6231ad96f.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='https://m.media-amazon.com/images/I/11EIQ5IGqaL._RC%7C01ZTHTZObnL.css,410yLeQZHKL.css,31OSFXVtM5L.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11fJbvhE5HL.css,01Dm5eKVxwL.css,01IdKcBuAdL.css,01y-XAlI+2*' title='Testing Java Microservices: Using Arquillian, Hoverfly, AssertJ, JUnit, Selenium, and Mockito: Alex Soto Bueno, Andy Gumbrecht, Jason Porter: 9781617292897: Amazon.com: Books' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                              <uix:Target CvElementArea="734, 479, 137, 53" CvTextArea="746, 488, 66, 16" CvTextArgument="Paperback" CvType="Button" DesignTimeRectangle="747, 487, 64, 17" ElementType="Text" FriendlyName="'Paperback'" FullSelectorArgument="&lt;webctrl aaname='Paperback' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;span&amp;gt;span&amp;gt;span&amp;gt;a&amp;gt;span' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Paperback' type='' tag='SPAN' class='' check:innerText='Paperback' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEQAAAAVCAYAAAD/wUjgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAP0SURBVFhH7ZZBaxpbFMffNyj5AIEsBDeBCIJCFgnNItiF6CLMqkwWjyEb24XBQMUuInYhGEjAkgcJEhCShYGCSBYjBBSyMLyFD7pQujAgJCikhEAJWZR/z7l3ro6TMS+v9D3ah4s/zJ1zz7n3/Oaco79dfwUmGmoCxKEJEIcmQByaAHHoJwXSw3E2gdhGDsddN/v3qX7AMRPY/dPdzrIBKSM2NYVnNk3PRRD7cDHi8N+ojWyY7xBB9qOb/ft0GJd5xcrudpYLEA3JUgmF/QyiAV4HkayNOv37+qmAJHBovescGSJAaKdN6wtUdhLQwouYXyKFdSRV9XRNpKkU06UaCps6QmxfoTifVGxS/xzbr7XxvuULND/kYKylUOgqIMuIbWWsM7WRam2e5hF7GZHxliLQNsto3qvz7tAo5aCvSD89SzZ67wRSL6ZECyWP2ri04j4KpJ5dlkDe80VMrC9QcAoQ23hlVY+Obe7xj3mE2NfjQ2iN7GsReHgdSKHCl7z/C2lOMEDVt7+H5EpQJJvmXla+Xq/0EVWhgMxgNmrQeQZCXl4HsX4q73b8ZhFRPovuY4h4U9D2e8LWeB/BNK2n55ahvTYQXUrhmN7bgXTKCfh5TzSP+gCkKxAv/IJ6UF7QQ0l3hg5K9S2GZZW0SiqcR8OyH8ZnyD6D2AmtT1OYJbt+dCP9rf0CtPJ9kUH1Vvq6tgwlIJLcMK09NjVzeM7xRCXXsO7nexso9Ef3KSDGFp3poecAfXzHnvFAqKyNt3uoXCn7Dao79KUWfJgNkH2OEx4PpLETEYdrBzdo7evi2akRIDZfVyBq32oRHVp3zvLQqZVm54KYpzsxLAGkuwftQTwpBUTKR5VyN2JnPdoydnVKhjw0e45Wt4fKu8crpPpuURws+pW+Lj9rf7SFr1Lni7uvK5BGBvO8L17G9ecSdP7C4RyqHKuWsVWIlccCVdwgnpQCosVluzyxQtyBNKkvRbCDHi5v29hd8w0vrJLyG0ifnKNapkGoyvYz2btFaKJEDWyfMZQ2qidFVMbAHALxQd8yUT0rI/mSz5uBXqK2+zSsltYXGqAHhmhJCaSH3VXZrs839lDgX8xiTcS2z5A6VbBowb+fIe5ArvtkF4OU5FmEvsqAnEBUK9GzN4Kkac0MUsfMWINRxfBh3bT5ugHx69AJBF+cWzm0aYp24fY9jMtByonP/06/bPQsgZC9byIZ9g7P8iYeDFV7DD9VnYw7AuQJur8blrr9vSOpyyuqIhv1oe7QEe1yM/iZe5JuyWcwcIfic1r9h3NgIPa7esTuon8GZJxcv/KvqR8DxPpzFcuaaLnZfyH9GCD/I02AODQBMiLgG9NCNUp+RFHRAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
+                                              <uix:Target CvTextArgument="See all formats and editions" CvType="Text" DesignTimeRectangle="1195, 402, 177, 18" ElementType="Text" FriendlyName="'See all'" FullSelectorArgument="&lt;webctrl parentid='morpheus-sidesheet-ingress' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='morpheus-sidesheet-ingress' tag='A' type='' class='a-size-base a-spacing-small a-spacing-top-micro a-link-normal _morpheus-popularity-rank-sidesheet-card_ingress_saf-link__2TS-U' aaname='See all formats and editions' check:innerText='See all formats and editions' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image, CV" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NGetText.Target>
+                                    </uix:NGetText>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Read more'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5bee7fb1-82fe-4136-83cc-6f0f6dd1e7e3" Version="V3">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://www.amazon.com/Testing-Java-Microservices-Arquillian-Hoverfly/dp/1617292893/ref=sr_1_1?crid=1OV9YEO6SA0XN&amp;keywords=Testing+Java+Microservices%3A+Using+Arquillian%2C+Hoverfly%2C+AssertJ%2C+JUnit%2C+Selenium%2C+and+Mockito&amp;qid=1689733570&amp;sprefix=testing+java+microservices+using+arquillian%2C+hoverfly%2C+assertj%2C+junit%2C+selenium%2C+and+%2Caps%2C217&amp;sr=8-1" CvTextArgument="Read more" CvType="Text" DesignTimeRectangle="587, 716, 68, 18" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Read more'" FullSelectorArgument="&lt;webctrl class='a-expander-prompt' parentid='bookDescription_feature_div' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='a-expander-prompt' parentid='bookDescription_feature_div' tag='SPAN' type='' aaname='Read more' check:innerText='Read more' /&gt;" Guid="e93ab048-87b4-44c3-81f2-4b73c0e6186e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEgAAAAWCAYAAABjadrAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOxSURBVFhH7VZNSxtRFM1PyLJbl1lm2W2WXbp06zIrySaouDJIIEIoSlEGCZShSmMJpUELpkipUsGKhBAUgpYQTEHCgIQMKOH0vI+ZTGKcaUGphTnwmHlz33v33vPux0QQwhchQQEICQpASFAAQoIC8O8I6rVQPqih3tPzZwoPQTWkFpYRd8ZSAUlzF9tXd1r+yGjtIjGzilxLz58pPAQdIzmTwat3xzAPxNjDXHYZ0dQTOfG/EpQ80lOJBubmM5h4e6bnxG0X7Z81VH5asG71Nwc9C+2rBsrVS7S7YyKP8pNqDSeW/ecEcU/9vKH2SNzB6lyiQh339HtkY/U7EHZ65Lb1C4fVBuqujgECCGohl8kgapzKmXVaRCJFwuaZgvNZRtcaVrSDFztrnGdVegqZiMadgffW0Sbi3PtiVsnFGRMPESTJy2PydR4T6cF5CaOIKb7HqCPGsyKzmyg7NeymgcUsv0kbsnjB9XHjGJYW10uriGRKyBnMCsoi68dAv4WVvMgSZbc4M75x6u4R8CHoDu0DE7GZLJI/yGyfNSqdwdQXZ3sX5usBeejZ8PJ/aC7ToF3UxUTvfWk23DV2rYi4L0EZTO45umypKzJfRMUhRK9x7K28zSKyUMKhE1VNyunw1FelURJE0pMHIrq6sBhB4lKH9pyX8FLYdKXnxD2CIt6RymN6X3tQLfLGGTFNhmdHjcpWfkCChm1RRifUjWkZFcdp3GJTLlHwS7ER5wW212nPkC7vhZ6pC/jgPUyT+oaRQiiCTGzLmYCFlVwGscKp60+78w3TI3ofjKD6x1VE0zzwRs1xZErSRHi7nU4MKpBo7mGSRsoU4vcJkQKOQ3LvCBmPSpB6T5SGD/PuuU+QLh8ihYd8MtyyIfBwijE/F3lAjCkkA11GASOoI6Uj+IXcEvOXKeTgfgQtY+5cihQelSDVTP4ugpR8qAGNgX+RZlqJGpSq8r3PMJ6lESIk+0os69R1l091Gy5Bt9fY3vDWILU3tv4dbZHvfRv1PSOgSP8NQcDJe6b7LAnQZcu++CTPGK5BXoLYWD6LxsJL9/7r9a5liXDgTxBZLhu6+AlSmvvsIjSU62J0WDzjW+oGLr4WSKZIMXYQ1q65gjHskE5BVduySGyYePWIBLkdSZyvR8KsDXexEYJEoymbednxoml2VpaFaLoAw5MlHoL+HLIQs6iN/Q/qdEnrQxD/KRZsNwKfANKGMbb5QfzbiSLt/x8UYhxCggIQEhSAkKAAhAT5AvgN0x4FjaZZZ6QAAAAASUVORK5CYII=" InformativeScreenshot="fc56cd1b54c108afc3e772c4808595af.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='https://m.media-amazon.com/images/I/11EIQ5IGqaL._RC%7C01ZTHTZObnL.css,410yLeQZHKL.css,31OSFXVtM5L.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11fJbvhE5HL.css,01Dm5eKVxwL.css,01IdKcBuAdL.css,01y-XAlI+2*' title='Testing Java Microservices: Using Arquillian, Hoverfly, AssertJ, JUnit, Selenium, and Mockito: Alex Soto Bueno, Andy Gumbrecht, Jason Porter: 9781617292897: Amazon.com: Books' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                    <uix:NGetText DisplayName="Get Text 'Read less'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="5bee7fb1-82fe-4136-83cc-6f0f6dd1e7e3" TextString="[Description]" Version="V3">
+                                      <uix:NGetText.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://www.amazon.com/Java-Comprehensive-Guide-Programming-Professionals/dp/1493222953/ref=sr_1_1_sspa?keywords=Java+Books&amp;qid=1689734901&amp;sr=8-1-spons&amp;sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&amp;psc=1" DesignTimeRectangle="571, 333, 801, 460" DesignTimeScaleFactor="1" FriendlyName="'This is'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='bookDescription_feature_div' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='bookDescription_feature_div' tag='DIV' class='a-expander-content a-expander-partial-collapse-content a-expander-content-expanded' aaname='   ' /&gt;" Guid="cc4f5388-c791-42b7-8f5e-66127a0c7fae" InformativeScreenshot="74bb596ef81269264ff0787fd052c920.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='https://m.media-amazon.com/images/I/11EIQ5IGqaL._RC%7C01ZTHTZObnL.css,410yLeQZHKL.css,31OSFXVtM5L.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11fJbvhE5HL.css,01Dm5eKVxwL.css,01IdKcBuAdL.css,01y-XAlI+2*' title='Java: The Comprehensive Guide to Java Programming for Professionals (Rheinwerk Computing): Christian Ullenboom: 9781493222957: Amazon.com: Books' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                              <uix:Target CvTextArgument="Read less" CvType="Text" DesignTimeRectangle="587, 774, 59, 18" ElementType="Text" FriendlyName="'Read less'" FullSelectorArgument="&lt;webctrl class='a-expander-prompt' parentid='bookDescription_feature_div' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='a-expander-prompt' parentid='bookDescription_feature_div' tag='SPAN' type='' aaname='Read less' check:innerText='Read less' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAD8AAAAWCAYAAAB3/EQhAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANeSURBVFhH7VbBSyJhFJ8/oaPXjh497tVjR49eO3oKL5HiySEEDVnyUEgIy7AFChFJBRqybO4GboTIUCAVIo0gMrCIA4X89n3ffDqTNabtxi6rP/gY33vz5vt+773vPSXMMObkZxVz8rOKv0e+10T+rAa1J2Q7uK2CclvI7wQb+RqCkQQ8g7WeQUA5Ru7+Udj/MJrH8K6kEG8K2Q5ukxE4F/I7wUa+ggBtuPS5AoWirpwVEIolsBB0OODv4l8k/3TDOkJhGYufroRMeOhCu6uheKdDfxC6AXo6tPs68tVbaN0XKobsF9UaLnTjbeTJX72uoXyvw+gLnYDRbaFcrUPtdEFfH8JJz/AK+SbisoyF9CWX9MssvEEKRpiuRThGVbGFTXH4m6MtkmPmlWE2VkVHFjP9fBce8nWtmXb2jcUpyF+cpLm/m31/jc4U3kWe9wsDRSX5ZG8XP6+T3sIY8o/QzhS4V2II/KCY9aknrMrwn+rC3oXy0QoMesaTyJaVBCT5GCoThO8HpT58x6hl4ZmUfLuApZUkQqqopj5VZESG96BFAjs3O6Np4uBV4aS38Iy8ZF/BJJZL4nTVLGWKMt2g0u6Yq7iXtAgKGDrZKCPqfsqyXe8T0SSiDf6KiSnKXjvZgrSWRV7sy1Y6RefbrpD1FlEKhHvjELmGPfxOeguOmVcPUlhYVZD7aco4V3hAeNnZV0ZkvlGAj7LLy5r0i1SiQ/Lcd4ToFOR5IAfla1u+wbXSLxHdSMBFPq5IBnG1O14v4Fz2/SaidN/dVNa80Hn2KPMdbh1BC/F1GR4q6wGeZz6B0DU3mZiCvF5KQ1rNomiKznho0z2nfUffddCPb3hU6uzOB6v0u3+FIDWaD5RpbXh3qC+0WTTNxjgkT5vldux33vR1b3+HxiZE34BaSL/a8Ja/Cbldgo8qyXfYsvoKfUNjU4Oeuu2Pkn4qAuWkFzLDePK0VT4dgxTZR5kRbpTgp9HHy5/IsKdnzxyDN18yFChW9tRVqVeEMrSZvR+Ia2H2khi8Owo1MQfyFMzNmPnuMPti0jBfN/sOPf0lqsnOV/iFnk0BKZggH0qIk94GG/nJwZsaNZ0X5/wL89TCI3TyG53Rk8P0Z3s/m/PiTJPqGd5E/n/BnPysYk5+NgH8ApqqHHgCKrG5AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
+                                              <uix:Target CvTextArgument="Read with Our Free App" CvType="Text" DesignTimeRectangle="571, 273, 131, 15" FriendlyName="'Read with Our Free App'" FullSelectorArgument="&lt;webctrl class='kcpAppsPopOver' parentid='kcpAppsPopOver' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='kcpAppsPopOver' parentid='kcpAppsPopOver' tag='SPAN' type='' aaname='                                         Read with Our  ' check:innerText='Read with Our Free App' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image, CV" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NGetText.Target>
+                                    </uix:NGetText>
+                                  </Sequence>
+                                </TryCatch.Try>
+                                <TryCatch.Catches>
+                                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="454,21" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ActivityAction x:TypeArguments="s:Exception">
+                                      <ActivityAction.Argument>
+                                        <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                      </ActivityAction.Argument>
+                                      <Sequence sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:05" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="564,85" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Bot caught an error fetching data. Press  'OK' to continue.&quot;]" />
+                                        <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="564,1047" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_3">
+                                          <ueab:ExcelProcessScopeX.Body>
+                                            <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                                              <ActivityAction.Argument>
+                                                <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                                              </ActivityAction.Argument>
+                                              <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="530,960" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_3" ResizeWindow="None" TemplatePath="[ExcelFilePath]" UseTemplate="True" WorkbookPath="[ExcelFilePath]">
+                                                <ueab:ExcelApplicationCard.Body>
+                                                  <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                                                    <ActivityAction.Argument>
+                                                      <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                                                    </ActivityAction.Argument>
+                                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,668" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                      <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Sheet1&quot;).Cell(&quot;C2&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_2" Value="[&quot;Failed&quot;]" />
+                                                      <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Sheet1&quot;).Cell(&quot;E2&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_3" Value="[&quot;Failed&quot;]" />
+                                                      <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Sheet1&quot;).Cell(&quot;D2&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_5" Value="[&quot;Failed&quot;]" />
+                                                    </Sequence>
+                                                  </ActivityAction>
+                                                </ueab:ExcelApplicationCard.Body>
+                                              </ueab:ExcelApplicationCard>
+                                            </ActivityAction>
+                                          </ueab:ExcelProcessScopeX.Body>
+                                        </ueab:ExcelProcessScopeX>
+                                      </Sequence>
+                                    </ActivityAction>
+                                  </Catch>
+                                </TryCatch.Catches>
+                              </TryCatch>
+                              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="626,385" sap2010:WorkflowViewState.IdRef="TryCatch_4">
+                                <TryCatch.Try>
+                                  <uix:NGetText DisplayName="Get Text 'Kindle'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="5bee7fb1-82fe-4136-83cc-6f0f6dd1e7e3" TextString="[KindlePrice]" Version="V3">
+                                    <uix:NGetText.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://www.amazon.com/Java-Comprehensive-Guide-Programming-Professionals/dp/1493222953/ref=sr_1_1_sspa?keywords=Java+Books&amp;qid=1689734901&amp;sr=8-1-spons&amp;sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&amp;psc=1" CvType="InputBox" DesignTimeRectangle="572, 517, 152, 49" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Kindle $46.80'" FullSelectorArgument="&lt;webctrl parentid='a-autoid-4' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='a-autoid-4' tag='A' type='' class='a-button-text' /&gt;" Guid="e4c774af-f373-40ea-a27b-2890bdf7af5c" InformativeScreenshot="665e4fcdbf4d474758e84dedc34affb9.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='https://m.media-amazon.com/images/I/11EIQ5IGqaL._RC%7C01ZTHTZObnL.css,410yLeQZHKL.css,31OSFXVtM5L.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11fJbvhE5HL.css,01Dm5eKVxwL.css,01IdKcBuAdL.css,01y-XAlI+2*' title='Java: The Comprehensive Guide to Java Programming for Professionals (Rheinwerk Computing): Christian Ullenboom: 9781493222957: Amazon.com: Books' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                            <uix:Target CvElementArea="569, 515, 157, 54" CvTextArea="583, 524, 38, 13" CvTextArgument="Kindle" CvType="InputBox" DesignTimeRectangle="583, 523, 37, 17" ElementType="Text" FriendlyName="'Kindle'" FullSelectorArgument="&lt;webctrl aaname='Kindle' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;span&amp;gt;span&amp;gt;span&amp;gt;a&amp;gt;span' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Kindle' type='' tag='SPAN' class='' check:innerText='Kindle' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACkAAAAVCAYAAADb2McgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJ4SURBVEhL7ZTfS5NRGMf7D8I/IIa3YcjQhBjDmmTpnM6EZmmSkFlKZkKbep1h8yKTvGiS5E3eZMIG+Q/sokleeZPp0IFO9hMmGyiI3/Z9eiebm28bvF0E+8Dh5bzPOc/5nPc8572A/4CypFaUJbWiJMmtrS1sb28rvdLgXOfUFGKxmLRXExP4sbamRNXJkXw3M4P73d1IJBLS9/v9aDKb8XZ6Wt497O2VlkwmJV4KvtVVtFmt2N3dlXbDZILb7Vai6pwrScHWdNLR8XEcHh5KnO8zGygVzSUDgQAe9PTAMTp6Kkg+LSxIIzw+jv/u88ExNoabjY0YS28oHo9LnPM+uFy43dyMR319cM3NqUru7OzA7nDgevo9n+xnyJNsaW3FXZsNz4eHcXBwoET+8GJkRBrhl6mprcXj/n54vV54PB5cravDx/l5ib+fnYWpoQHfVlawlq49jmO/kCQ/irW9XcqKJ/h6chK2zs7TDedJ6ioroa+pkYXPclaSu+aTHB0d4engoOSIRqO409GBz4uLEiNqx81x2Xfh1+YmzBaLbI7kSd7r6pKdXDMY5CizUZMkjDFHoeNUk+Scy1VVko/NWF8Pg9GI9fV1iResyXA4jDdOp9zsnxsbSrR4yWAwKDX6dXlZifxdkqfA0yhEQUl+dhY+L86tpiapE1KsJBd7NjQkC6dSKRwfH+PL0hKaW1oKSrK0mCu7xLg+55FzJQkXeGm3Swns7e0VLUm4MV7CSzodqvV6+VuwzijIvE8GBnCxokJET05O5PZfqa6WMmOztLUhuL8vuXIktYaLRyKRnN+YGhzHUgmFQjI3wz+V1IqypFaUJbUB+A38HEF6DGDIIQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                                            <uix:Target CvTextArgument="Read with Our Free App" CvType="Text" DesignTimeRectangle="571, 571, 131, 15" FriendlyName="'Read with Our Free App'" FullSelectorArgument="&lt;webctrl class='kcpAppsPopOver' parentid='kcpAppsPopOver' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='kcpAppsPopOver' parentid='kcpAppsPopOver' tag='SPAN' type='' aaname='                                         Read with Our  ' check:innerText='Read with Our Free App' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image, CV" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NGetText.Target>
+                                  </uix:NGetText>
+                                </TryCatch.Try>
+                                <TryCatch.Catches>
+                                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_3">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ActivityAction x:TypeArguments="s:Exception">
+                                      <ActivityAction.Argument>
+                                        <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                      </ActivityAction.Argument>
+                                      <Sequence sap:VirtualizedContainerService.HintSize="626,885" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:05" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="564,85" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;Bot caught an error fetching data. Press  'OK' to continue.&quot;]" />
+                                        <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="564,649" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_4">
+                                          <ueab:ExcelProcessScopeX.Body>
+                                            <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                                              <ActivityAction.Argument>
+                                                <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                                              </ActivityAction.Argument>
+                                              <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="530,562" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_4" ResizeWindow="None" TemplatePath="[ExcelFilePath]" UseTemplate="True" WorkbookPath="[ExcelFilePath]">
+                                                <ueab:ExcelApplicationCard.Body>
+                                                  <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                                                    <ActivityAction.Argument>
+                                                      <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                                                    </ActivityAction.Argument>
+                                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,270" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                      <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Sheet1&quot;).Cell(&quot;B2&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_7" Value="[&quot;Failed&quot;]" />
+                                                    </Sequence>
+                                                  </ActivityAction>
+                                                </ueab:ExcelApplicationCard.Body>
+                                              </ueab:ExcelApplicationCard>
+                                            </ActivityAction>
+                                          </ueab:ExcelProcessScopeX.Body>
+                                        </ueab:ExcelProcessScopeX>
+                                      </Sequence>
+                                    </ActivityAction>
+                                  </Catch>
+                                </TryCatch.Catches>
+                              </TryCatch>
+                              <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="626,1357" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2">
+                                <ueab:ExcelProcessScopeX.Body>
+                                  <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                                    <ActivityAction.Argument>
+                                      <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                                    </ActivityAction.Argument>
+                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,1270" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="530,1159" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" TemplatePath="[ExcelFilePath]" UseTemplate="True" WorkbookPath="[ExcelFilePath]">
+                                        <ueab:ExcelApplicationCard.Body>
+                                          <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                                            <ActivityAction.Argument>
+                                              <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                                            </ActivityAction.Argument>
+                                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,867" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Sheet1&quot;).Cell(&quot;C2&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_1" Value="[PaperbackPrice]" />
+                                              <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Sheet1&quot;).Cell(&quot;E2&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_4" Value="[&quot;Success&quot;]" />
+                                              <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Sheet1&quot;).Cell(&quot;B2&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_6" Value="[KindlePrice]" />
+                                              <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Sheet1&quot;).Cell(&quot;D2&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_8" Value="[Description]" />
+                                            </Sequence>
+                                          </ActivityAction>
+                                        </ueab:ExcelApplicationCard.Body>
+                                      </ueab:ExcelApplicationCard>
+                                    </Sequence>
+                                  </ActivityAction>
+                                </ueab:ExcelProcessScopeX.Body>
+                              </ueab:ExcelProcessScopeX>
+                            </Sequence>
+                          </ActivityAction>
+                        </ui:ForEachRow.Body>
+                      </ui:ForEachRow>
+                    </Sequence>
+                  </ActivityAction>
+                </uix:NApplicationCard.Body>
+                <uix:NApplicationCard.TargetApp>
+                  <uix:TargetApp Area="1912, -8, 1936, 1096" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF5SURBVDhPlVM9S8NQFBW0+QOO2h+gU9vdSbuLNP0HprtDfoBIhYKgWFyFLLpUC10EjbvawcFC4qJDm4CDllQdHHq9JzdfbYLUA4e8d98959738t4cESnMA2afOSuQC40Cg31EkrBtm3Rdp4qqklqtkmEYwUoKDRi4MhZ0u12az+VoYYowzIALg6GMBVqt5gs2ymWyLCuaL+fzQcYEhikDx3H8LkzTpMt2299C2EUG0gbYf6FUikRJZiBtEFaECbo5bjb/ZxAm79Xr/nxb06KY53l+LIG0QaFYjAQ4yOQfQTdTCAy+HJkycIBLfOIQ4AtRhbe1zmajd5fGFt+J+x1hZNBZJfqwEPgbt1sifNwlOoM0NBjcEJ3z8I4XR3E3KXwOiF5aUqy1iEjiDF4vxAS8WpMqvUOiJ2bviKtvSlXkoSDWA4P4Kr89SCJMkMwcB1/qrPATupa8H/4bYHCVGxhNAC0+n8Yd9LliNvzHhOd8wvxGZEYglzWk/AJk0E1AkKBI3AAAAABJRU5ErkJggg==" InformativeScreenshot="bed6576971ab64f7c5c33014ff6bef05.jpg" Selector="&lt;html app='msedge.exe' htmlwindowname='https://m.media-amazon.com/images/I/11EIQ5IGqaL._RC%7C01ZTHTZObnL.css,410yLeQZHKL.css,31OSFXVtM5L.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11fJbvhE5HL.css,01Dm5eKVxwL.css,01IdKcBuAdL.css,01y-XAlI+2*' title='Amazon.com. Spend less. Smile more.' /&gt;" Title="Amazon.com. Spend less. Smile more." Url="https://www.amazon.com/ref=nav_logo" />
+                </uix:NApplicationCard.TargetApp>
+              </uix:NApplicationCard>
+            </Sequence>
+          </FlowStep>
+        </FlowStep.Next>
+      </FlowStep>
+      <x:Reference>__ReferenceID0</x:Reference>
+    </Flowchart>
+  </Sequence>
+</Activity>
